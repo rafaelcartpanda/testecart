@@ -1,0 +1,7 @@
+/* small components & animations */
+.interactive{cursor:pointer}
+.pulse{animation:pulse 2.4s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.02)}100%{transform:scale(1)}}
+
+/* subtle parallax background lights */
+.bg-lights{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0.18}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cartpanda — Redesign Premium</title>
+    <link rel="stylesheet" href="/src/css/base.css">
+    <link rel="stylesheet" href="/src/css/layout.css">
+    <link rel="stylesheet" href="/src/css/components.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header id="site-header" class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">Cartpanda</a>
+        <nav class="main-nav" role="navigation" aria-label="Menu principal">
+          <a href="/">Início</a>
+          <a href="/features.html">Funcionalidades</a>
+          <a href="/pricing.html">Planos</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/support.html">Suporte</a>
+          <a href="/signup.html" class="cta">Criar conta</a>
+        </nav>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section id="hero" class="hero">
+        <video id="hero-video" class="hero-video" autoplay muted loop playsinline preload="none">
+          <source src="/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-fallback" aria-hidden="true" style="background-image:url('/hero-fallback.webp')"></div>
+
+        <div class="hero-overlay container">
+          <h1 class="hero-title mask-reveal">O futuro do e‑commerce, guiado por um panda.</h1>
+          <p class="hero-sub mask-reveal delay-1">Design, performance e tecnologia em uma experiência única de loja online.</p>
+          <div class="hero-ctas mask-reveal delay-2">
+            <a class="btn primary" href="/signup.html">Comece grátis</a>
+            <a class="btn ghost" href="#features">Ver recursos</a>
+          </div>
+        </div>
+
+        <!-- Three.js canvas mount -->
+        <div id="panda-mount" class="panda-mount" aria-hidden="true"></div>
+
+      </section>
+
+      <!-- features preview -->
+      <section id="features" class="features container">
+        <h2>Recursos em destaque</h2>
+        <div class="cards" id="feature-cards">
+          <!-- cards injected -->
+        </div>
+      </section>
+
+      <!-- orbital product carousel -->
+      <section id="products" class="products">
+        <div class="container">
+          <h2>Produtos em destaque</h2>
+          <div id="carousel" class="carousel" aria-label="Carrossel de produtos">
+            <!-- items injected -->
+          </div>
+        </div>
+      </section>
+
+      <!-- final CTA -->
+      <section class="final-cta container">
+        <h2>Pronto para transformar sua loja?</h2>
+        <a class="btn primary large" href="/signup.html">Criar conta</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© Cartpanda 2025 — Redesign demo</small>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
