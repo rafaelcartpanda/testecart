@@ -32,6 +32,9 @@ jobs:
       
       - name: Build
         run: npm run build
+        env:
+          NODE_ENV: production
+          REPOSITORY_NAME: ${{ github.event.repository.name }}
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
